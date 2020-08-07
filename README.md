@@ -1,6 +1,9 @@
 # city-name-autocomplete
 
-# Java version 8
+# Project information
+1. Java 8
+2. I didn't use any database, just write a repository and hard coded some data.
+3. Service layer has most business logic, that's why I ony included unit tests for it now. 15 unit tests in total.
 
 # How to run the project
 Method 1: Import the project into Intellij, directly run the main method in file AutocompleteApplication.java
@@ -13,6 +16,8 @@ Method 3: run ./gradlew bootRun
 After running the application locally, the API endpoint is "http://localhost:8080/suggestions"
 1. Since the query parameter "q" is required, that means we have to include this parameter in the url, like: http://localhost:8080/suggestions?q=Londo
 2. The latitude/longitude parameters are optional, we can add it to improve the city scores, ex: http://localhost:8080/suggestions?q=Londo&latitude=43.70011&longitude=-79.4163
+
+Note: the API is case sensentive, so "Lon" is not same as "lon".
 
 # Bonus questions:
 1. Can you think of more scoring parameters to make the suggestions better?
