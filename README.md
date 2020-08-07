@@ -8,9 +8,9 @@
 # How to run the project
 Method 1: Import the project into Intellij, directly run the main method in file AutocompleteApplication.java
 
-Method 2: after ./gradlew build, an executable war will be generated under "build/libs". It can be executed by "java -jar ./build/libs/autocomplete-0.0.1-SNAPSHOT.jar"
+Method 2: after "./gradlew build", an executable jar will be generated under "build/libs". It can be executed by "java -jar ./build/libs/autocomplete-0.0.1-SNAPSHOT.jar"
 
-Method 3: run ./gradlew bootRun 
+Method 3: run "./gradlew bootRun" 
 
 # How to test the API
 After running the application locally, the API endpoint is "http://localhost:8080/suggestions"
